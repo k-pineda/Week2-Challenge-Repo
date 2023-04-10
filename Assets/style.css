@@ -62,17 +62,12 @@ p {
 }
 
 .hero {
-    height: 800px;
+    height: 100px;
     width: 100%;
     margin-bottom: 25px;
-    background-image: url("../Assets/imgs/clem-onojeghuo-fY8Jr4iuPQM-unsplash\ \(1\).jpg");
+    background-image: url("../Assets/imgs/alyssa-hurley-yekIZ4ltv1o-unsplash.jpg");
     background-size: cover;
     background-position: center;
-}
-
-.float-left {
-    float: left;
-    margin-right: 25px;
 }
 
 .float-right {
@@ -97,9 +92,11 @@ p {
 /* removed online-reputation-management and social-media-marketing classes and combined styles into search-engine-optimization */
 .search-engine-optimization img {
     max-height: 200px;
+    display: block;
 }
 /* removed online-reputation-management and social-media-marketing classes and combined styles into search-engine-optimization */
-.search-engine-optimization h2 {
+.search-engine-optimization h2 ul {
+    display: block;
     margin-bottom: 20px;
     font-size: 36px;
 }
@@ -116,19 +113,6 @@ p {
 /* removed benefit-brand and benefit cost classes and combined styles into benefit-lead */
 .benefit-lead {
     margin-bottom: 32px;
-}
-
-/* removed benefit-brand and benefit cost classes and combined styles into benefit-lead */
-.benefit-lead h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-/* removed benefit-brand and benefit cost classes and combined styles into benefit-lead */
-.benefit-lead img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
 }
 
 footer {
