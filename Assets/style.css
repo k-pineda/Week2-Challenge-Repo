@@ -1,94 +1,139 @@
-body {
-    display: flex;
-    flex-direction: column;
-    line-height: 1.3;
-  }
-  
-  header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1%;
-    background-color: #13293d;
-    color: #fff;
-  }
-  
-  h1 {
-    font-size: 200%;
-  }
-  
-  h2 {
-    margin: 2% 0;
-    font-size: 250%;
-  }
-  
-  nav ul {
-    display: flex;
-    justify-content: space-between;
-    min-width: 300px;
-  }
-  
-  nav a {
-    color: #b9c6ae;
-    font-weight: bold;
-    text-decoration: none;
-  }
-  
-  nav a:hover {
-    color: #fff;
-  }
-  
-  main {
-    display: flex;
-    flex: 1 1 0;
-    max-width: 96%;
-    margin: 2% auto;
-  }
-  article {
-    border-bottom: 1px solid #13293d;
-  }
-  
-  article p {
-    margin: 2% 0;
-    font-size: 110%;
-  }
-  
-  article ul {
-    margin-left: 5%;
-    font-size: 110%;
-    list-style: circle;
-  }
-  img {
-    max-height: 145px;
-    border-radius: 25px;
-    flex-wrap: wrap;
-  }
-  
-  .float-right{
-    float: right;
-    margin-right: 25px;
-  }
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
 
-  footer {
-    display: flex;
-    justify-content: center;
-    padding: 2%;
-    background-color: #13293d;
-    color: #fff;
-  }
-  
-  /* TODO: Add code here to select all <a> elements that link to a file with a `.css` extension */
-  a[href$=".css"]::after {
-    content: "📝";
-  }
-  
-  @media screen and (max-width: 768px) {
-    header {
-      flex-direction: column;
-    }
-  
-    main {
-      max-width: 1200px;
-    }
-  }
-  
+body {
+    background-color: #d9dcd6;
+}
+
+/* consolidated padding: 20px declaration to one new rule */
+.header,
+.benefits {
+    padding: 20px; 
+}
+/* consolidated color: #ffffff declaration to one new rule */
+.header,
+ a, 
+.search-engine-optimization,
+.benefit-lead {
+    color: #ffffff; 
+}
+.header {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #2a607c;
+}
+
+.header h1 {
+    display: inline-block;
+    font-size: 48px;
+}
+
+/* consolidated font-size: 20px declaration to one new rule */
+.header nav,
+footer h2 {
+
+    font-size: 20px;
+}
+
+.header nav {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.header nav ul {
+    list-style-type: none;
+}
+
+.header nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    font-size: 16px;
+}
+
+.hero {
+    height: 800px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url("../Assets/imgs/clem-onojeghuo-fY8Jr4iuPQM-unsplash\ \(1\).jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.float-left {
+    float: left;
+    margin-right: 25px;
+}
+
+.float-right {
+    float: right;
+    margin-left: 25px;
+}
+/* organized to follow semantic structure */
+.content {
+    width: 75%;
+    display: inline-block;
+    margin-left: 20px;
+}
+/* removed online-reputation-management and social-media-marketing classes and combined styles into search-engine-optimization */
+.search-engine-optimization {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+}
+
+/* removed online-reputation-management and social-media-marketing classes and combined styles into search-engine-optimization */
+.search-engine-optimization img {
+    max-height: 200px;
+}
+/* removed online-reputation-management and social-media-marketing classes and combined styles into search-engine-optimization */
+.search-engine-optimization h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+.benefits {
+    margin-right: 20px;
+    clear: both;
+    float: right;
+    width: 20%;
+    height: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #2589bd;
+}
+
+/* removed benefit-brand and benefit cost classes and combined styles into benefit-lead */
+.benefit-lead {
+    margin-bottom: 32px;
+}
+
+/* removed benefit-brand and benefit cost classes and combined styles into benefit-lead */
+.benefit-lead h3 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* removed benefit-brand and benefit cost classes and combined styles into benefit-lead */
+.benefit-lead img {
+    display: block;
+    margin: 10px auto;
+    max-width: 150px;
+}
+
+footer {
+    padding: 30px;
+    clear: both;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
