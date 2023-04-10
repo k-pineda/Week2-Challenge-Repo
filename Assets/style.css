@@ -44,12 +44,14 @@ body {
     max-width: 96%;
     margin: 2% auto;
   }
-
-.deco {
-    width: auto;
-    height: 100px;
+.hero {
+    height: 800px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url(../Assets/imgs/clem-onojeghuo-fY8Jr4iuPQM-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
 }
-  
   article {
     border-bottom: 1px solid #13293d;
   }
