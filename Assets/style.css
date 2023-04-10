@@ -44,6 +44,11 @@ body {
     max-width: 96%;
     margin: 2% auto;
   }
+
+.deco {
+    width: auto;
+    height: 100px;
+}
   
   article {
     border-bottom: 1px solid #13293d;
