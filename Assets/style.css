@@ -8,12 +8,12 @@ body {
     background-color: #d9dcd6;
 }
 
-/* consolidated padding: 20px declaration to one new rule */
+
 .header,
 .benefits {
     padding: 20px; 
 }
-/* consolidated color: #ffffff declaration to one new rule */
+
 .header,
  a, 
 .search-engine-optimization,
@@ -30,7 +30,7 @@ body {
     font-size: 48px;
 }
 
-/* consolidated font-size: 20px declaration to one new rule */
+
 .header nav,
 footer h2 {
 
@@ -68,19 +68,45 @@ p {
     background-image: url("../Assets/imgs/alyssa-hurley-yekIZ4ltv1o-unsplash.jpg");
     background-size: cover;
     background-position: center;
+    font-size: 20px;
+    position: relative;
+    text-align: center;
+    color: cornflowerblue;;
+}
+
+.subtitle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .float-right {
     float: right;
     margin-left: 25px;
 }
-/* organized to follow semantic structure */
+
+.img-to-work {
+    float: right;
+    width: 35%;
+    height: 300px;
+}
+
 .content {
     width: 75%;
     display: inline-block;
     margin-left: 20px;
 }
-/* removed online-reputation-management and social-media-marketing classes and combined styles into search-engine-optimization */
+
+.content h2,
+.benefits h2 {
+    font-size: 1.5rem;
+    text-indent: 10px;
+    margin-bottom: 10px;
+    text-decoration: underline;
+
+}
+
 .search-engine-optimization {
     margin-bottom: 20px;
     padding: 50px;
@@ -89,12 +115,10 @@ p {
     background-color: #0072bb;
 }
 
-/* removed online-reputation-management and social-media-marketing classes and combined styles into search-engine-optimization */
 .search-engine-optimization img {
     max-height: 200px;
     display: block;
 }
-/* removed online-reputation-management and social-media-marketing classes and combined styles into search-engine-optimization */
 .search-engine-optimization h2 ul {
     display: block;
     margin-bottom: 20px;
@@ -110,7 +134,6 @@ p {
     background-color: #2589bd;
 }
 
-/* removed benefit-brand and benefit cost classes and combined styles into benefit-lead */
 .benefit-lead {
     margin-bottom: 32px;
 }
